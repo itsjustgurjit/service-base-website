@@ -1,0 +1,53 @@
+nav {
+  position: sticky;
+  top: 0px;
+  background: white;
+}
+.navbar {
+  position: sticky;
+  top: 0px;
+  z-index: 999;
+  background-color: white;
+}
+.btn-orange {
+  background-color: rgb(255, 115, 8);
+}
+.btn-orange:hover {
+  background-color: rgb(255, 81, 0);
+}
+.nav-getintouch-btn {
+  margin-left: 25px;
+}
+.header-design {
+  background: url("/assets/homepic.jpg");
+  background-size: contain;
+  padding-bottom: 6rem !important;
+}
+
+footer {
+  position: relative;
+  height: 300px;
+}
+
+footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("/assets/6.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.05;
+  z-index: 1; 
+}
+
+@media only screen and (max-width: 700px) {
+  .header-design {
+    background: url("/assets/homepic.jpg");
+    background-size: cover;
+    padding-bottom: 6rem !important;
+  }
+}
