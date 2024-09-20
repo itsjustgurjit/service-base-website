@@ -25,14 +25,12 @@ nav {
 }
 
 /* fix footer image  */
-
-
-/* footer {
+/* 
+ footer {
   background-image: url('/assets/output-onlinepngtools.png');
   position: relative;
   height: 300px;
-} */
-/*
+} 
 footer::after {
   content: '';
   position: absolute;
@@ -46,10 +44,10 @@ footer::after {
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0.05;
-  z-index: 1; 
-}  */
+  z-index: -1; 
+}   */
 
-footer a{
+footer a {
   text-decoration: none !important;
 }
 
@@ -61,3 +59,25 @@ footer a{
   }
 }
 
+.Categories-widget-serice a {
+  color: black;
+  padding: 10px;
+  margin: 5px 0;
+}
+.Categories-widget-serice {
+  overflow: hidden;
+}
+.Categories-widget-serice li{
+  text-decoration: none;
+  margin: 5px 0;
+  border-radius: 5px;
+  font-weight: 500;
+}
+.Categories-widget-serice li:hover{
+  background-color: white;
+}
+
+.image-in-contact-card-blog {
+  height: 100px;
+  width: 100px;
+}
