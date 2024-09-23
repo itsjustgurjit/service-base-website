@@ -127,24 +127,77 @@
                   </li>
                 </ul>
               </li>
-              <li><a class="nav-link" href="pricing.html">Contact</a></li>
+              <li><a class="nav-link" href="/contact.html">Contact</a></li>
               <li>
-                <a
-                  class="btn btn-orange text-white px-4 me-sm-3 my-1 nav-getintouch-btn"
-                  href="#features"
-                  >Get in touch</a
-                >
-              </li>
+        <a class="btn btn-orange text-white px-4 me-sm-3 my-1 nav-getintouch-btn" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Get in touch</a>
+    </li>
             </ul>
           </div>
         </div>
       </nav>
 
-      <section class="hero-section d-flex align-items-center py-5" style="background-image: url('/assets/website_banner.jpg');background-size: cover;">
+      <!-- contact modal -->
+      <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <!-- Full Name -->
+                        <div class="mb-3">
+                            <label for="fullName" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="fullName" placeholder="Enter your full name">
+                        </div>
+                        
+                        <!-- Email -->
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        </div>
+
+                        <!-- Phone Number -->
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+                        </div>
+
+                        <!-- Services Dropdown -->
+                        <div class="mb-3">
+                            <label for="services" class="form-label">Choose Service</label>
+                            <select class="form-select" id="services">
+                                <option value="Web Development">Web Development</option>
+                                <option value="Mobile App Development">Mobile App Development</option>
+                                <option value="Search Engine Optimization">Search Engine Optimization</option>
+                                <option value="Digital Marketing">Digital Marketing</option>
+                                <option value="Social Media Optimization">Social Media Optimization</option>
+                                <option value="UI/UX Design">UI/UX Design</option>
+                                <option value="Pay Per Click">Pay Per Click</option>
+                                <option value="Contact Center Solution">Contact Center Solution</option>
+                            </select>
+                        </div>
+
+                        <!-- Message Textarea -->
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Write your message here"></textarea>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn " style="background-color: #ff7308;color:white;">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <section class="hero-section d-flex align-items-center py-5" style="background-image: url('/assets/bg-cover1.jpg');background-size: cover;">
         <div class="container p-5">
           <div class="row">
             <div class="col-12 col-md-8 p-2">
-              <h1 class="display-5 text-white fw-bold">Web Development</h1>
+              <h1 class="display-5 text-white fw-bold">Ux/ui design</h1>
             </div>
           </div>
         </div>
@@ -156,22 +209,18 @@
         <!-- Blog Entries Column -->
         <div class="col-md-8">
           <h1 class="my-4">
-            Responsive Web Design Services: Elevating Your Online Presence
-          </h1>
+            Designing Visually Appealing, User-Centric Interfaces for Optimal User Experience          </h1>
 
           <!-- Blog Post -->
           <div class="mb-4">
             <img
               class="card-img-top"
-              src="https://3.bp.blogspot.com/--C1wpaf_S4M/W7V__10nRoI/AAAAAAAAK24/1NSfapuYSIY0f0wzXY9NgoH0FjQLT07YACKgBGAs/s1600/maxresdefault.jpg"
+              src="/assets/sc-ui.jpg"
               alt="Card image cap"
             />
             <div class="card-body">
               <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a
-                laboriosam. Dicta expedita corporis animi vero voluptate
-                voluptatibus possimus, veniam magni quis!
+                
               </p>
             </div>
           </div>
@@ -244,29 +293,41 @@
             <div class="col-lg-12 mb-12 mb-lg-0">
               <!-- write blog here -->
               <div class="col-xl-12 col-lg-12">
-                <div class="service-details__benefits">
-                  <h2><b>The Significance of Responsive Web Design</b></h2><br>
-                  <p>Responsive web design is not merely a trend but a necessity. With an ever-increasing number of people accessing websites via smartphones and tablets, it's crucial to ensure that your website adapts seamlessly to various screen sizes and resolutions. A responsive website is one that automatically adjusts its layout and content to provide an optimal user experience, regardless of the device being used.</p><br>
-                  <h2><b>Choosing the Right Web Design Company</b></h2><br>
-                  <p>When it comes to finding the <b>best website development company</b>, it's essential to consider various factors to ensure you make the right choice. Here are some key aspects to keep in mind:</p><br>
-               <ol>
-                      <li><p><b>Experience and Expertise:</b>  Look for a web design company with a proven track record in creating responsive websites. Their experience will reflect in the quality of work they deliver.</p></li>
-                      <li><p><b>Portfolio:</b>  Review the company's portfolio to assess the diversity and creativity of their projects. This will give you insights into their design capabilities.</p></li>
-                      <li><p><b>Client Reviews:</b>   Read client testimonials and reviews to understand their reputation for customer satisfaction.</p></li>
-                      <li><p><b>Customization:</b>  Ensure that the company can tailor their services to your specific business needs. A one-size-fits-all approach may not work for your unique requirements.</p></li>
-                      <li><p><b>SEO-Friendly Design:</b> A good website development company will incorporate SEO best practices into the design process, ensuring your website is search engine friendly.</p></li>
-                  </ol><br>
-                    <h3 class="service-details__text-"><b>Web Designing Company in Mohali</b></h3><br>
-                      <p class="service-details__text">If you're based in Mohali or the surrounding region, you're in luck. Mohali boasts several top-notch web design and development companies, and finding the best one for your project is now easier than ever.</p><br>
-                      
-                      <h3 class="service-details__text-"><b>Rmak Solutions: Your Go-To Web Designing Company in Mohali</b></h3><br>
-                      <p class="service-details__text">Rmak Solutions stands out as a leading <b>web design and development company in Mohali</b>. With a focus on creating responsive and user-centric websites, we take pride in being the go-to choice for businesses looking to establish a strong online presence.</p><br>
-                      <p class="service-details__text">Our approach is simple yet effective. We combine creativity, cutting-edge technology, and a deep understanding of user behavior to craft websites that not only look stunning but also function flawlessly on every device. Whether you're a startup looking to make your mark or an established enterprise seeking a website makeover, Rmak Solutions has the expertise to meet your needs.</p><br>
-                    <h3 class=""><b>Conclusion</b></h3><br>
-                      <p class="">In the digital age, responsive web design is no longer an option but a necessity. Your website should be a dynamic and engaging platform that attracts and retains visitors, regardless of their device. When it comes to finding the best web development company, consider factors such as experience, portfolio, client reviews, customization options, and SEO capabilities. And if you're in Mohali, look no further than Rmak Solutions to transform your online presence and elevate your brand to new heights. Invest in responsive web design services today, and watch your online success soar!
-                      </p>
-                </div>
-                </div>
+                <article>
+                  <!-- Section 1: What is UI/UX Design? -->
+                  <h2>What is UI/UX Design?</h2>
+                  <p>UI (User Interface) and UX (User Experience) design are crucial components of creating effective digital products. UI focuses on the visual aspects and interactive elements of a product, while UX emphasizes the overall experience a user has when interacting with it.</p>
+      
+                  <!-- Section 2: Importance of UI/UX Design -->
+                  <h2>Why is UI/UX Design Important?</h2>
+                  <p>A well-designed UI/UX can significantly impact user satisfaction and engagement. Here are some key reasons why it matters:</p>
+                  <ul class="list-group list-group-flush mb-4">
+                      <li class="list-group-item">Improves user satisfaction and loyalty.</li>
+                      <li class="list-group-item">Increases conversion rates and sales.</li>
+                      <li class="list-group-item">Reduces development and support costs by minimizing errors.</li>
+                      <li class="list-group-item">Enhances accessibility for a wider audience.</li>
+                  </ul>
+      
+                  <!-- Section 3: Key Principles of Effective UI/UX Design -->
+                  <h2 class="mt-4">Key Principles of Effective UI/UX Design</h2>
+                  <ol class="list-group list-group-numbered mb-4">
+                      <li class="list-group-item">Keep it simple: Prioritize clarity and simplicity in design.</li>
+                      <li class="list-group-item">Focus on usability: Ensure that the product is easy to use and navigate.</li>
+                      <li class="list-group-item">Use consistent design elements: Maintain uniformity in colors, fonts, and styles.</li>
+                      <li class="list-group-item">Conduct user research: Understand the needs and behaviors of your target audience.</li>
+                      <li class="list-group-item">Test and iterate: Continuously gather feedback and make improvements.</li>
+                  </ol>
+      
+                  <!-- Section 4: Emerging Trends in UI/UX Design -->
+                  <h2>Emerging Trends in UI/UX Design for 2024</h2>
+                  <p>Staying updated with the latest trends is essential for UI/UX designers. Here are some trends to watch:</p>
+                  <ul class="list-group list-group-flush mb-4">
+                      <li class="list-group-item"><strong>Dark Mode:</strong> Offering a dark theme for better readability and reduced eye strain.</li>
+                      <li class="list-group-item"><strong>Microinteractions:</strong> Subtle animations that enhance user engagement and provide feedback.</li>
+                      <li class="list-group-item"><strong>Voice User Interface (VUI):</strong> Integrating voice commands into applications for improved accessibility.</li>
+                      <li class="list-group-item"><strong>Augmented Reality (AR):</strong> Using AR elements to create immersive user experiences.</li>
+                  </ul>
+              </article>
             </div>
             
           </div>
@@ -285,10 +346,8 @@
               <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                 <!-- Content -->
                 <h6 class="text-uppercase fw-bold">Rmak solution</h6>
-                <hr
-                  class="mb-4 mt-0 d-inline-block mx-auto"
-                  style="width: 60px; background-color: #7c4dff; height: 2px"
-                />
+                <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #7c4dff; height: 2px" />
                 <p>
                   Rmak Solutions is the best and fastest-growing IT firm in
                   Mohali, USA, and Canada. With years of experience, we are the
@@ -302,10 +361,8 @@
               <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                 <!-- Links -->
                 <h6 class="text-uppercase fw-bold">Services</h6>
-                <hr
-                  class="mb-4 mt-0 d-inline-block mx-auto"
-                  style="width: 60px; background-color: #7c4dff; height: 2px"
-                />
+                <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #7c4dff; height: 2px" />
                 <p>
                   <a href="/webdesign.html" class="text-white">Web Development</a>
                 </p>
@@ -332,20 +389,18 @@
                 </p>
               </div>
               <!-- Grid column -->
-
+               
               <!-- Grid column -->
               <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                 <!-- Links -->
                 <h6 class="text-uppercase fw-bold">Useful links</h6>
-                <hr
-                  class="mb-4 mt-0 d-inline-block mx-auto"
-                  style="width: 60px; background-color: #7c4dff; height: 2px"
-                />
+                <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #7c4dff; height: 2px" />
                 <p>
-                  <a href="/pricing.html" class="text-white">Privacy policy</a>
+                  <a href="/privacy.html" class="text-white">Privacy policy</a>
                 </p>
                 <p>
-                  <a href="#!" class="text-white">Terms and conditions</a>
+                  <a href="/terms-and-conditions.html" class="text-white">Terms and conditions</a>
                 </p>
               </div>
               <!-- Grid column -->
@@ -354,14 +409,16 @@
               <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                 <!-- Links -->
                 <h6 class="text-uppercase fw-bold">Contact</h6>
-                <hr
-                  class="mb-4 mt-0 d-inline-block mx-auto"
-                  style="width: 60px; background-color: #7c4dff; height: 2px"
-                />
-                <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
-                <p><i class="fas fa-envelope mr-3"></i> info@example.com</p>
-                <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
-                <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+                <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #7c4dff; height: 2px;color: white;" />
+                <p><i class="fas fa-home mr-3"></i>69 Tiller Trail, Brampton, ON, L6X 4S6, Canada</p>
+                <p><i class="fas fa-home mr-3"></i>30 N Gould St, Sheridan, WY, 82801</p>
+                <p><i class="fas fa-home mr-3"></i>2, Kishanpura Road, Oppo. Supple bake, Sangrur, PB, 148001</p>
+                <p><i class="fas fa-phone mr-3"></i><a class="text-light" href="tel:+16286007989">+1 628 600 7989</a></p>
+<p><i class="fas fa-phone mr-3"></i><a class="text-light" href="tel:+18882246271">+1 888 224 6271</a></p>
+<p><i class="fas fa-phone mr-3"></i><a class="text-light" href="tel:+917973837496">+91 797 383 7496</a></p>
+<p><i class="fas fa-envelope mr-3"></i><a class="text-light" href="mailto:admin@rku.solutions">admin@rku.solutions</a></p>
+
               </div>
               <!-- Grid column -->
             </div>
@@ -373,9 +430,7 @@
         <!-- Copyright -->
         <div class="text-center bg-dark p-3">
           © 2024 Copyright:
-          <a class="text-white" href="https://mdbootstrap.com/"
-            >RmakSolution.com</a
-          >
+          <p class="text-white">RmakSolution.com</p>
         </div>
         <!-- Copyright -->
       </footer>

@@ -127,20 +127,73 @@
                   </li>
                 </ul>
               </li>
-              <li><a class="nav-link" href="pricing.html">Contact</a></li>
+              <li><a class="nav-link" href="/contact.html">Contact</a></li>
               <li>
-                <a
-                  class="btn btn-orange text-white px-4 me-sm-3 my-1 nav-getintouch-btn"
-                  href="#features"
-                  >Get in touch</a
-                >
-              </li>
+        <a class="btn btn-orange text-white px-4 me-sm-3 my-1 nav-getintouch-btn" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Get in touch</a>
+    </li>
             </ul>
           </div>
         </div>
       </nav>
 
-      <section class="hero-section d-flex align-items-center py-5" style="background-image: url('/assets/website_banner.jpg');background-size: cover;">
+      <!-- contact modal -->
+      <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <!-- Full Name -->
+                        <div class="mb-3">
+                            <label for="fullName" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="fullName" placeholder="Enter your full name">
+                        </div>
+                        
+                        <!-- Email -->
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        </div>
+
+                        <!-- Phone Number -->
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+                        </div>
+
+                        <!-- Services Dropdown -->
+                        <div class="mb-3">
+                            <label for="services" class="form-label">Choose Service</label>
+                            <select class="form-select" id="services">
+                                <option value="Web Development">Web Development</option>
+                                <option value="Mobile App Development">Mobile App Development</option>
+                                <option value="Search Engine Optimization">Search Engine Optimization</option>
+                                <option value="Digital Marketing">Digital Marketing</option>
+                                <option value="Social Media Optimization">Social Media Optimization</option>
+                                <option value="UI/UX Design">UI/UX Design</option>
+                                <option value="Pay Per Click">Pay Per Click</option>
+                                <option value="Contact Center Solution">Contact Center Solution</option>
+                            </select>
+                        </div>
+
+                        <!-- Message Textarea -->
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Write your message here"></textarea>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn " style="background-color: #ff7308;color:white;">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <section class="hero-section d-flex align-items-center py-5" style="background-image: url('/assets/bg-cover.jpg');background-size: cover;">
         <div class="container p-5">
           <div class="row">
             <div class="col-12 col-md-8 p-2">
@@ -163,15 +216,12 @@
           <div class="mb-4">
             <img
               class="card-img-top"
-              src="https://3.bp.blogspot.com/--C1wpaf_S4M/W7V__10nRoI/AAAAAAAAK24/1NSfapuYSIY0f0wzXY9NgoH0FjQLT07YACKgBGAs/s1600/maxresdefault.jpg"
+              src="/assets/sc-website.jpg"
               alt="Card image cap"
             />
             <div class="card-body">
               <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a
-                laboriosam. Dicta expedita corporis animi vero voluptate
-                voluptatibus possimus, veniam magni quis!
+                
               </p>
             </div>
           </div>
@@ -342,7 +392,7 @@
                     style="width: 60px; background-color: #7c4dff; height: 2px"
                   />
                   <p>
-                    <a href="/pricing.html" class="text-white">Privacy policy</a>
+                    <a href="/privacy.html" class="text-white">Privacy policy</a>
                   </p>
                   <p>
                     <a href="#!" class="text-white">Terms and conditions</a>
@@ -354,14 +404,16 @@
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                   <!-- Links -->
                   <h6 class="text-uppercase fw-bold">Contact</h6>
-                  <hr
-                    class="mb-4 mt-0 d-inline-block mx-auto"
-                    style="width: 60px; background-color: #7c4dff; height: 2px"
-                  />
-                  <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
-                  <p><i class="fas fa-envelope mr-3"></i> info@example.com</p>
-                  <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
-                  <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+                  <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                    style="width: 60px; background-color: #7c4dff; height: 2px;color: white;" />
+                  <p><i class="fas fa-home mr-3"></i>69 Tiller Trail, Brampton, ON, L6X 4S6, Canada</p>
+                  <p><i class="fas fa-home mr-3"></i>30 N Gould St, Sheridan, WY, 82801</p>
+                  <p><i class="fas fa-home mr-3"></i>2, Kishanpura Road, Oppo. Supple bake, Sangrur, PB, 148001</p>
+                  <p><i class="fas fa-phone mr-3"></i><a class="text-light" href="tel:+16286007989">+1 628 600 7989</a></p>
+  <p><i class="fas fa-phone mr-3"></i><a class="text-light" href="tel:+18882246271">+1 888 224 6271</a></p>
+  <p><i class="fas fa-phone mr-3"></i><a class="text-light" href="tel:+917973837496">+91 797 383 7496</a></p>
+  <p><i class="fas fa-envelope mr-3"></i><a class="text-light" href="mailto:admin@rku.solutions">admin@rku.solutions</a></p>
+  
                 </div>
                 <!-- Grid column -->
               </div>

@@ -148,7 +148,7 @@ footer a {
   font-weight: bold;
   font-size: 1.3em;
 }
-.btn-primary {
+." style="background-color: #ff7308; {
   border-radius: 2em;
   padding: 0.5em 1.5em;
 }

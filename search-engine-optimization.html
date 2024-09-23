@@ -127,24 +127,77 @@
                   </li>
                 </ul>
               </li>
-              <li><a class="nav-link" href="pricing.html">Contact</a></li>
+              <li><a class="nav-link" href="/contact.html">Contact</a></li>
               <li>
-                <a
-                  class="btn btn-orange text-white px-4 me-sm-3 my-1 nav-getintouch-btn"
-                  href="#features"
-                  >Get in touch</a
-                >
-              </li>
+        <a class="btn btn-orange text-white px-4 me-sm-3 my-1 nav-getintouch-btn" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Get in touch</a>
+    </li>
             </ul>
           </div>
         </div>
       </nav>
 
-      <section class="hero-section d-flex align-items-center py-5" style="background-image: url('/assets/website_banner.jpg');background-size: cover;">
+      <!-- contact modal -->
+      <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <!-- Full Name -->
+                        <div class="mb-3">
+                            <label for="fullName" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="fullName" placeholder="Enter your full name">
+                        </div>
+                        
+                        <!-- Email -->
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        </div>
+
+                        <!-- Phone Number -->
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+                        </div>
+
+                        <!-- Services Dropdown -->
+                        <div class="mb-3">
+                            <label for="services" class="form-label">Choose Service</label>
+                            <select class="form-select" id="services">
+                                <option value="Web Development">Web Development</option>
+                                <option value="Mobile App Development">Mobile App Development</option>
+                                <option value="Search Engine Optimization">Search Engine Optimization</option>
+                                <option value="Digital Marketing">Digital Marketing</option>
+                                <option value="Social Media Optimization">Social Media Optimization</option>
+                                <option value="UI/UX Design">UI/UX Design</option>
+                                <option value="Pay Per Click">Pay Per Click</option>
+                                <option value="Contact Center Solution">Contact Center Solution</option>
+                            </select>
+                        </div>
+
+                        <!-- Message Textarea -->
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Write your message here"></textarea>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn " style="background-color: #ff7308;color:white;">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <section class="hero-section d-flex align-items-center py-5" style="background-image: url('/assets/bg-cover-phone.jpg');background-size: cover;">
         <div class="container p-5">
           <div class="row">
             <div class="col-12 col-md-8 p-2">
-              <h1 class="display-5 text-white fw-bold">Web Development</h1>
+              <h1 class="display-5 text-white fw-bold">Search Engine Optimization</h1>
             </div>
           </div>
         </div>
@@ -156,22 +209,19 @@
         <!-- Blog Entries Column -->
         <div class="col-md-8">
           <h1 class="my-4">
-            Responsive Web Design Services: Elevating Your Online Presence
+            Improving Search Rankings and Driving Targeted Traffic to Your Website
           </h1>
 
           <!-- Blog Post -->
           <div class="mb-4">
             <img
               class="card-img-top"
-              src="https://3.bp.blogspot.com/--C1wpaf_S4M/W7V__10nRoI/AAAAAAAAK24/1NSfapuYSIY0f0wzXY9NgoH0FjQLT07YACKgBGAs/s1600/maxresdefault.jpg"
+              src="/assets/sc-seo.jpg"
               alt="Card image cap"
             />
             <div class="card-body">
               <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a
-                laboriosam. Dicta expedita corporis animi vero voluptate
-                voluptatibus possimus, veniam magni quis!
+                
               </p>
             </div>
           </div>
@@ -238,40 +288,49 @@
     </div>
     
       <!-- Features section-->
-      <section class="" id="features">
-        <div class="container px-5 my-5">
-          <div class="row gx-5">
-            <div class="col-lg-12 mb-12 mb-lg-0">
-              <!-- write blog here -->
-              <div class="col-xl-12 col-lg-12">
-                <div class="service-details__benefits">
-                  <h2><b>The Significance of Responsive Web Design</b></h2><br>
-                  <p>Responsive web design is not merely a trend but a necessity. With an ever-increasing number of people accessing websites via smartphones and tablets, it's crucial to ensure that your website adapts seamlessly to various screen sizes and resolutions. A responsive website is one that automatically adjusts its layout and content to provide an optimal user experience, regardless of the device being used.</p><br>
-                  <h2><b>Choosing the Right Web Design Company</b></h2><br>
-                  <p>When it comes to finding the <b>best website development company</b>, it's essential to consider various factors to ensure you make the right choice. Here are some key aspects to keep in mind:</p><br>
-               <ol>
-                      <li><p><b>Experience and Expertise:</b>  Look for a web design company with a proven track record in creating responsive websites. Their experience will reflect in the quality of work they deliver.</p></li>
-                      <li><p><b>Portfolio:</b>  Review the company's portfolio to assess the diversity and creativity of their projects. This will give you insights into their design capabilities.</p></li>
-                      <li><p><b>Client Reviews:</b>   Read client testimonials and reviews to understand their reputation for customer satisfaction.</p></li>
-                      <li><p><b>Customization:</b>  Ensure that the company can tailor their services to your specific business needs. A one-size-fits-all approach may not work for your unique requirements.</p></li>
-                      <li><p><b>SEO-Friendly Design:</b> A good website development company will incorporate SEO best practices into the design process, ensuring your website is search engine friendly.</p></li>
-                  </ol><br>
-                    <h3 class="service-details__text-"><b>Web Designing Company in Mohali</b></h3><br>
-                      <p class="service-details__text">If you're based in Mohali or the surrounding region, you're in luck. Mohali boasts several top-notch web design and development companies, and finding the best one for your project is now easier than ever.</p><br>
-                      
-                      <h3 class="service-details__text-"><b>Rmak Solutions: Your Go-To Web Designing Company in Mohali</b></h3><br>
-                      <p class="service-details__text">Rmak Solutions stands out as a leading <b>web design and development company in Mohali</b>. With a focus on creating responsive and user-centric websites, we take pride in being the go-to choice for businesses looking to establish a strong online presence.</p><br>
-                      <p class="service-details__text">Our approach is simple yet effective. We combine creativity, cutting-edge technology, and a deep understanding of user behavior to craft websites that not only look stunning but also function flawlessly on every device. Whether you're a startup looking to make your mark or an established enterprise seeking a website makeover, Rmak Solutions has the expertise to meet your needs.</p><br>
-                    <h3 class=""><b>Conclusion</b></h3><br>
-                      <p class="">In the digital age, responsive web design is no longer an option but a necessity. Your website should be a dynamic and engaging platform that attracts and retains visitors, regardless of their device. When it comes to finding the best web development company, consider factors such as experience, portfolio, client reviews, customization options, and SEO capabilities. And if you're in Mohali, look no further than Rmak Solutions to transform your online presence and elevate your brand to new heights. Invest in responsive web design services today, and watch your online success soar!
-                      </p>
-                </div>
-                </div>
-            </div>
-            
-          </div>
-        </div>
-      </section>
+      <div class="container my-5">
+        <article>
+            <!-- Section 1: What is SEO? -->
+            <h2>What is SEO?</h2>
+            <p>SEO (Search Engine Optimization) refers to the process of optimizing your website to rank higher in search engine results, such as Google or Bing. This increases the chances of your site being seen by users who are searching for related content, products, or services.</p>
+            <p>SEO can be broken down into three main categories:</p>
+            <ul class="list-group list-group-flush mb-4">
+                <li class="list-group-item"><strong>On-Page SEO:</strong> Focuses on optimizing content and HTML elements on your site.</li>
+                <li class="list-group-item"><strong>Off-Page SEO:</strong> Deals with backlinks and external signals that boost your site’s authority.</li>
+                <li class="list-group-item"><strong>Technical SEO:</strong> Improves your site’s architecture and performance to make it easier for search engines to crawl.</li>
+            </ul>
+
+            <!-- Section 2: Why is SEO Important? -->
+            <h2>Why is SEO Important?</h2>
+            <p>With millions of websites on the internet, SEO is essential for helping your content stand out. Here are some reasons why SEO is crucial:</p>
+            <ul class="list-group list-group-flush mb-4">
+                <li class="list-group-item">Increased visibility in search engines.</li>
+                <li class="list-group-item">Higher web traffic and engagement.</li>
+                <li class="list-group-item">Better user experience through optimized content.</li>
+                <li class="list-group-item">Long-term marketing strategy with sustainable results.</li>
+            </ul>
+
+            <!-- Section 3: Key SEO Strategies for 2024 -->
+            <h2 class="mt-4">Key SEO Strategies for 2024</h2>
+            <ol class="list-group list-group-numbered mb-4">
+                <li class="list-group-item">Focus on high-quality, relevant content that answers users' queries.</li>
+                <li class="list-group-item">Optimize for mobile devices, as mobile-friendliness is crucial for ranking.</li>
+                <li class="list-group-item">Utilize voice search optimization as voice search becomes more prevalent.</li>
+                <li class="list-group-item">Prioritize page load speed to enhance user experience and lower bounce rates.</li>
+                <li class="list-group-item">Build a robust backlink profile through outreach and quality content sharing.</li>
+            </ol>
+
+            <!-- Section 4: The Future of SEO -->
+            <h2>The Future of SEO</h2>
+            <p>As technology evolves, so does SEO. Here are some trends to watch for in the future:</p>
+            <ul class="list-group list-group-flush mb-4">
+                <li class="list-group-item"><strong>AI and Machine Learning:</strong> Search engines will increasingly use AI to understand user intent.</li>
+                <li class="list-group-item"><strong>Visual and Video Search:</strong> Optimization for image and video content will become more important.</li>
+                <li class="list-group-item"><strong>Local SEO:</strong> Enhanced focus on local search will be crucial for businesses targeting specific geographic areas.</li>
+                <li class="list-group-item"><strong>Data Privacy:</strong> Understanding user data regulations will influence SEO strategies.</li>
+            </ul>
+        </article>
+    </div>
       
       <div class="my-5">
       <!-- Footer -->
@@ -285,10 +344,8 @@
               <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                 <!-- Content -->
                 <h6 class="text-uppercase fw-bold">Rmak solution</h6>
-                <hr
-                  class="mb-4 mt-0 d-inline-block mx-auto"
-                  style="width: 60px; background-color: #7c4dff; height: 2px"
-                />
+                <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #7c4dff; height: 2px" />
                 <p>
                   Rmak Solutions is the best and fastest-growing IT firm in
                   Mohali, USA, and Canada. With years of experience, we are the
@@ -302,10 +359,8 @@
               <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                 <!-- Links -->
                 <h6 class="text-uppercase fw-bold">Services</h6>
-                <hr
-                  class="mb-4 mt-0 d-inline-block mx-auto"
-                  style="width: 60px; background-color: #7c4dff; height: 2px"
-                />
+                <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #7c4dff; height: 2px" />
                 <p>
                   <a href="/webdesign.html" class="text-white">Web Development</a>
                 </p>
@@ -332,20 +387,18 @@
                 </p>
               </div>
               <!-- Grid column -->
-
+               
               <!-- Grid column -->
               <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                 <!-- Links -->
                 <h6 class="text-uppercase fw-bold">Useful links</h6>
-                <hr
-                  class="mb-4 mt-0 d-inline-block mx-auto"
-                  style="width: 60px; background-color: #7c4dff; height: 2px"
-                />
+                <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #7c4dff; height: 2px" />
                 <p>
-                  <a href="/pricing.html" class="text-white">Privacy policy</a>
+                  <a href="/privacy.html" class="text-white">Privacy policy</a>
                 </p>
                 <p>
-                  <a href="#!" class="text-white">Terms and conditions</a>
+                  <a href="/terms-and-conditions.html" class="text-white">Terms and conditions</a>
                 </p>
               </div>
               <!-- Grid column -->
@@ -354,14 +407,16 @@
               <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                 <!-- Links -->
                 <h6 class="text-uppercase fw-bold">Contact</h6>
-                <hr
-                  class="mb-4 mt-0 d-inline-block mx-auto"
-                  style="width: 60px; background-color: #7c4dff; height: 2px"
-                />
-                <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
-                <p><i class="fas fa-envelope mr-3"></i> info@example.com</p>
-                <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
-                <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+                <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #7c4dff; height: 2px;color: white;" />
+                <p><i class="fas fa-home mr-3"></i>69 Tiller Trail, Brampton, ON, L6X 4S6, Canada</p>
+                <p><i class="fas fa-home mr-3"></i>30 N Gould St, Sheridan, WY, 82801</p>
+                <p><i class="fas fa-home mr-3"></i>2, Kishanpura Road, Oppo. Supple bake, Sangrur, PB, 148001</p>
+                <p><i class="fas fa-phone mr-3"></i><a class="text-light" href="tel:+16286007989">+1 628 600 7989</a></p>
+<p><i class="fas fa-phone mr-3"></i><a class="text-light" href="tel:+18882246271">+1 888 224 6271</a></p>
+<p><i class="fas fa-phone mr-3"></i><a class="text-light" href="tel:+917973837496">+91 797 383 7496</a></p>
+<p><i class="fas fa-envelope mr-3"></i><a class="text-light" href="mailto:admin@rku.solutions">admin@rku.solutions</a></p>
+
               </div>
               <!-- Grid column -->
             </div>
@@ -373,9 +428,7 @@
         <!-- Copyright -->
         <div class="text-center bg-dark p-3">
           © 2024 Copyright:
-          <a class="text-white" href="https://mdbootstrap.com/"
-            >RmakSolution.com</a
-          >
+          <p class="text-white">RmakSolution.com</p>
         </div>
         <!-- Copyright -->
       </footer>
