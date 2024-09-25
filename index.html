@@ -95,23 +95,24 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form action="https://api.staticforms.xyz/submit" method="post">
+                      <input type="hidden" name="accessKey" value="448885c0-c446-41d5-a8db-0073b590fbc3"> 
                         <!-- Full Name -->
                         <div class="mb-3">
                             <label for="fullName" class="form-label">Full Name</label>
-                            <input type="text" class="form-control" id="fullName" placeholder="Enter your full name">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your full name">
                         </div>
                         
                         <!-- Email -->
                         <div class="mb-3">
                             <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                            <input type="email" class="form-control" id="email_addr" name="email" placeholder="Enter your email">
                         </div>
 
                         <!-- Phone Number -->
                         <div class="mb-3">
                             <label for="phone" class="form-label">Phone Number</label>
-                            <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number">
                         </div>
 
                         <!-- Services Dropdown -->
@@ -129,14 +130,37 @@
                             </select>
                         </div>
 
+                        <input type="hidden" name="$serice-selected" id="serice-selected" value="web development">
                         <!-- Message Textarea -->
                         <div class="mb-3">
-                            <label for="message" class="form-label">Message</label>
-                            <textarea class="form-control" id="message" rows="4" placeholder="Write your message here"></textarea>
+                            <label for="message" id="message"
+                            name="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="4" placeholder="Write your message here"></textarea>
                         </div>
-
+                        <input type="hidden" name="redirectTo" value="https://main--rkuproductionwebsite.netlify.app/contact">
                         <!-- Submit Button -->
-                        <button type="submit" class="btn " style="background-color: #ff7308;color:white;">Submit</button>
+                        <input type="submit" class="btn btn-success btn-orange border-0 contact-submit-button" 
+            style="background-color: #ff7308; max-width: 500px; padding: 10px; transition: transform 0.2s ease;" 
+            value="Submit" 
+            onclick="animateButton(this)" />
+            <a href="https://dm.wa.link/dz3vec" class="position-absolute rounded-circle d-flex align-items-center justify-content-center" style="bottom: 18px;right: 21px;gap: 12px;/* width: 40px; */color: black;text-decoration: none;/* height: 40px; */">
+              <p class="fw-bold text-success" style="
+    position: relative;
+    top: 7px;
+">Text now on Whatsapp</p><img src="whatsappicon.svg" alt="" style="
+    height: 40px;
+    width: 40px;
+">
+             </a>
+            <a href="https://dm.wa.link/dz3vec" class="position-absolute rounded-circle d-flex align-items-center justify-content-center" style="bottom: 18px;right: 21px;gap: 12px;/* width: 40px; */color: black;text-decoration: none;/* height: 40px; */">
+              <p class="fw-bold text-success" style="
+    position: relative;
+    top: 7px;
+">Text now on Whatsapp</p><img src="whatsappicon.svg" alt="" style="
+    height: 40px;
+    width: 40px;
+">
+             </a>
                     </form>
                 </div>
             </div>
@@ -277,13 +301,9 @@
         </div>
       </div>
     </div>
-    <!-- cards of why we are differnt -->
+   
     <!-- call to action -->
-    <!-- services cards -->
-    <!-- title of service cards-->
-    <!--======  Start Section Title One ======-->
-    <!--====== ABOUT TWO PART ENDS ======-->
-    <!--====== CARD PART START ======-->
+   
     <section class="card-area pb-5 pt-5 py-5" style="background-color: #e7f0f3;">
       <div class="container">
         <div class="col-lg-12">
@@ -504,6 +524,7 @@
       </div>
     </section>
     <!-- contact form -->
+     
     <div class="container px-5 my-5 text-center">
       <h1 class="my-4 fw-bold">
         Let's Get Going Towards An
@@ -514,28 +535,62 @@
         providing cutting-edge services for over 12 years. Every website we
         design is customized as per your audience and search engine response.
       </div>
-      <form id="contact_form" name="contact_form" method="post">
+      <form id="contact_form" name="contact_form" action="https://api.staticforms.xyz/submit" method="post">
         <div class="mb-5 row">
           <div class="col">
+            <input type="hidden" name="accessKey" value="448885c0-c446-41d5-a8db-0073b590fbc3"> 
             <input style="background-color: #eef3f7; padding: 12px" type="text" required maxlength="50"
               class="form-control" id="name" name="name" placeholder="Name" />
           </div>
           <div class="col">
-            <input style="background: #eef3f7; padding: 12px" type="email" required maxlength="50" class="form-control"
-              id="email_addr" name="email" placeholder="Email Address" />
+            
+              <input style="background: #eef3f7; padding: 12px" type="number" required maxlength="50" class="form-control"
+                id="phone" name="phone" placeholder="Phone Number with country code (+1 XXX XXXXX)" />
           </div>
+          
           <div class="mt-3">
+            <div class="col">
+              <input style="background: #eef3f7; padding: 12px" type="email" required maxlength="50" class="form-control"
+              id="email_addr" name="email" placeholder="Email Address" />
+            </div>
+            <br>
             <textarea style="background: #eef3f7; padding: 12px" placeholder="Message" class="form-control" id="message"
               name="message" rows="5"></textarea>
+              
           </div>
         </div>
+        <input type="hidden" name="redirectTo" value="https://main--rkuproductionwebsite.netlify.app/contact">
         <div class="d-grid d-flex justify-content-center">
-          <button type="submit" class="btn btn-success btn-orange border-0"
-            style="background-color: #ff7308; max-width: 500px; padding: 10px">
-            Send Message
-          </button>
+          <input type="submit" class="btn btn-success btn-orange border-0 contact-submit-button" 
+            style="background-color: #ff7308; max-width: 500px; padding: 10px; transition: transform 0.2s ease;" 
+            value="Submit" 
+            onclick="animateButton(this)" />
+            
         </div>
+        
+        <!-- Add this script to handle the animation -->
+        <script>
+          // Function to update hidden input with selected service value
+document.getElementById('services').addEventListener('change', function() {
+    var selectedService = this.value; // Get the value of the selected option
+    document.getElementById('service-selected').value = selectedService; // Set it to the hidden input
+    console.log(selectedService)
+});
+        function animateButton(button) {
+            // Add a scaling animation when clicked
+            button.style.transform = 'scale(0.95)';
+            button.value = 'Submitting...'; // Change the text to indicate submission
+        
+            // Reset the button after a short delay (if needed)
+            setTimeout(function() {
+              button.style.transform = 'scale(1)';
+              button.value = 'Submit'; // Optionally, reset the button text
+            }, 1000); // Adjust the time as needed
+          }
+        </script>
+        
       </form>
+      
     </div>
     <!-- Footer-->
     <!-- Remove the container if you want to extend the Footer to full width. -->
